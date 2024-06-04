@@ -45,13 +45,23 @@ const showForm = (flag) => {
     var signinForm = document.getElementById("signin-form");
     
     if (flag) {
-        signinForm.style.display = "none";
         signupForm.style.display = "block";
+        signinForm.style.display = "none";
     } else {
         signinForm.style.display = "block";
         signupForm.style.display = "none";
     }
 };
 
+const signupBtn = document.getElementById("signupBtn");
+const signinBtn = document.getElementById("signinBtn");
+
+signupBtn.addEventListener('click', function() {
+    showForm(false);
+});
+
+signinBtn.addEventListener('click', function() {
+    showForm(true);
+});
 
 // ------------------------------------------------------------------------------------------------------------
