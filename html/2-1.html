@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Sign In</title>
+    <link rel="stylesheet" href="../css/style_1.css">
+</head>
+<body>
+    <div class="main-form">
+        
+        <div class="heading">
+            <button id="signinBtn" onclick="showForm(true)">Sign up</button>
+            <button it="signupBtn" onclick="showForm(false)">Sign in</button>
+        </div>
+        
+        
+        <div id="signup-form" class="signup-form">
+            <h1 class="title">Sign Up</h1>    
+            <p class="title-p">It's quick and easy.</p>
+            <hr class="hr">
+            <form id="registerForm">
+                <div class="name-container">
+                    <input type="text" id="firstName" placeholder="Enter your First name" required>
+                    <input type="text" id="lastName" placeholder="Enter your Last name" required>
+                </div>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <input type="password" id="re-password" placeholder="Confirm your password" required>
+    
+                <!-- <label for="gender">Gender</label>
+                     <select id="gender" name="gender" required>
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         <option value="other">Rather not to say</option>
+                     </select> -->
+    
+                <label for="gender">Gender</label>
+                <span class="main-gender">
+                    <div class="gender g1">
+                        <label for="male">Male</label> 
+                        <input type="radio" name="gender" id="male">
+                    </div>
+                    <div class="gender g2">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female"> 
+                    </div>
+                    <div class="gender g3">
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" id="other">
+                     </div>
+                </span>
+                     
+
+                <label for="day">Date of Birth</label>
+                <select id="month" name="month" required></select>
+                <select id="day" name="day" required></select>
+                <select id="year" name="other" required></select>
+    
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div id="signin-form" class="signin-form">
+            <h2 class="title">Sign In</h2>
+            <hr class="hr">
+            <form id="loginForm">
+                <input type="email" id="mobileTwo" placeholder="Enter your email" required>
+                <input type="password" id="passwordTwo" placeholder="Enter your password" required>
+    
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+    </div>
+  
+    <script src="../js/script_2.js"></script>
+</body>
+</html>
