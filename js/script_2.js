@@ -36,14 +36,6 @@ for (let year = 1950; year <= currentYear; year++) {
     yearDropdown.appendChild(option);
 }
 
-
-// ------------------------------------------Creating Select Gender--------------------------------------------
-
-// const maleDropdown = document.getElementById('month');
-// const femaleDropdown = document.getElementById('day');
-// const otherDropdown = document.getElementById('year');
-
-
 // ------------------------------------------------------------------------------------------------------------
 
 // ------------------------------------------Showing Form------------------------------------------------------
